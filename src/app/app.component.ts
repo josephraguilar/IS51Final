@@ -10,8 +10,12 @@ export class AppComponent implements OnInit {
   constructor(private flexModal: FlexModalService) { }
 
   ngOnInit() {
+    document.getElementById("close").addEventListener("click", () =>  {
+      alert("This application is designed by Joseph Aguilar. (C) 2018”");
+    }
   }
-
-  // Launch flex modal or alert (3pts reduced) showing about text
+  
+  
+  
 
 }

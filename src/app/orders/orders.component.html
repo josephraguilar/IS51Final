@@ -29,10 +29,10 @@
         <tbody>
           <tr *ngFor="let order of orders; let i = index">
             <td><input type="text" class="form-control" id="1" placeholder="PID"></td>
-            <td><input type="text" class="form-control" id="2" placeholder="Description"></td>
-            <td><input type="text" class="form-control" id="3" placeholder="Price"></td>
-            <td><input type="text" class="form-control" id="4" placeholder="Inventory"></td>
-            <td><input type="text" class="form-control" id="5" placeholder="Quantity"></td>
+            <td><input type="text" class="form-control" id="2" placeholder="Description">{{ order.description }}</td>
+            <td><input type="text" class="form-control" id="3" placeholder="Price">{{ order.price }}</td>
+            <td><input type="text" class="form-control" id="4" placeholder="Inventory">{{ order.inventory }}</td>
+            <td><input type="text" class="form-control" id="5" placeholder="Quantity">{{ order.quantity }}</td>
             <td><button mat-raised-button color="primary" (click)="removeItem(i)" color="accent"><mat-icon>delete</mat-icon></button></td>
           </tr>
         </tbody>
@@ -58,6 +58,6 @@
     <h3></h3>
   </div>
   <div class="modal-action">
-      <button mat-raised-button color="primary">Close</button>
+      <button mat-raised-button color="primary" >Close</button>
   </div>
 </app-flex-modal>

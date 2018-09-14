@@ -11,7 +11,25 @@ import { Http } from '@angular/http';
 })
 
 export class OrdersComponent implements OnInit {
-  orders;
+  orders = [{
+    "pid": "P414",
+    "description": "1/4 Pipe",
+    "price": 12.00,
+    "inventory": 30,
+    "quantity": 2
+  }, {
+    "pid": "T208",
+    "description": "3/8 T Joint",
+    "price": 64.00,
+    "inventory": 74,
+    "quantity": 0
+  }, {
+    "pid": "B101",
+    "description": "Break Disk A",
+    "price": 85.00,
+    "inventory": 98,
+    "quantity": 2
+  }];
   constructor(
     private router: Router,
     private flexModal: FlexModalService,
@@ -21,8 +39,18 @@ export class OrdersComponent implements OnInit {
   }
 
   async ngOnInit() {
+    
+
+
 
   }
+
+
+
+
+
+
+
 
   // Calculate total and perform input validation
 
